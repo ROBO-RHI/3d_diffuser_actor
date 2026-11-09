@@ -1,0 +1,17 @@
+Looking in links: https://data.dgl.ai/wheels/cu116/repo.html
+Collecting dgl==1.1.3+cu116
+  Downloading https://data.dgl.ai/wheels/cu116/dgl-1.1.3%2Bcu116-cp38-cp38-manylinux1_x86_64.whl (94.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.9/94.9 MB 233.7 MB/s eta 0:00:00
+Requirement already satisfied: numpy>=1.14.0 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from dgl==1.1.3+cu116) (1.23.5)
+Requirement already satisfied: scipy>=1.1.0 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from dgl==1.1.3+cu116) (1.10.1)
+Requirement already satisfied: networkx>=2.1 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from dgl==1.1.3+cu116) (2.2)
+Requirement already satisfied: requests>=2.19.0 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from dgl==1.1.3+cu116) (2.32.3)
+Requirement already satisfied: tqdm in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from dgl==1.1.3+cu116) (4.70.1)
+Requirement already satisfied: psutil>=5.8.0 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from dgl==1.1.3+cu116) (7.2.2)
+Requirement already satisfied: decorator>=4.3.0 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from networkx>=2.1->dgl==1.1.3+cu116) (4.4.2)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from requests>=2.19.0->dgl==1.1.3+cu116) (3.4.0)
+Requirement already satisfied: idna<4,>=2.5 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from requests>=2.19.0->dgl==1.1.3+cu116) (3.10)
+Requirement already satisfied: urllib3<3,>=1.21.1 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from requests>=2.19.0->dgl==1.1.3+cu116) (2.2.3)
+Requirement already satisfied: certifi>=2017.4.17 in /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages (from requests>=2.19.0->dgl==1.1.3+cu116) (2024.8.30)
+Installing collected packages: dgl
+Successfully installed dgl-1.1.3+cu116

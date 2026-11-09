@@ -1,0 +1,140 @@
+pybullet build time: Jan 29 2025 23:19:57
+Arguments:
+{'accumulate_grad_batches': 1,
+ 'backbone': 'clip',
+ 'base_log_dir': PosixPath('/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/train_logs'),
+ 'batch_size': 12,
+ 'batch_size_val': 3,
+ 'cache_size': 0,
+ 'cache_size_val': 0,
+ 'cameras': ('front', 'wrist'),
+ 'checkpoint': None,
+ 'dataset': PosixPath('data/calvin/packaged_debug/training'),
+ 'dense_interpolation': 1,
+ 'diffusion_timesteps': 25,
+ 'embedding_dim': 192,
+ 'eval_only': 0,
+ 'exp_log_dir': 'probe',
+ 'fps_subsampling_factor': 3,
+ 'gripper_loc_bounds': 'tasks/calvin_rel_traj_location_bounds_task_ABC_D.json',
+ 'gripper_loc_bounds_buffer': 0.01,
+ 'image_rescale': '0.75,1.25',
+ 'image_size': '256,256',
+ 'instructions': PosixPath('instructions/calvin_debug'),
+ 'interpolation_length': 20,
+ 'keypose_only': 0,
+ 'lang_enhanced': 1,
+ 'lr': 0.0003,
+ 'max_episode_length': 30,
+ 'max_episodes_per_task': -1,
+ 'num_history': 3,
+ 'num_vis_ins_attn_layers': 2,
+ 'num_workers': 3,
+ 'quaternion_format': 'wxyz',
+ 'relative_action': 1,
+ 'rotation_parametrization': '6D',
+ 'run_log_dir': 'probe_b12',
+ 'seed': 0,
+ 'tasks': ('A', 'B', 'C', 'D'),
+ 'train_iters': 40,
+ 'use_instruction': 1,
+ 'val_freq': 20,
+ 'val_iters': 2,
+ 'valset': PosixPath('data/calvin/packaged_debug/validation'),
+ 'variations': (0,),
+ 'wd': 0.005}
+----------------------------------------------------------------------------------------------------
+Gripper workspace size: [0.66333743 0.59459641 0.39931523]
+Logging: /home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/train_logs/probe/probe_b12
+Available devices (CUDA_VISIBLE_DEVICES): None
+Device count 1
+Can't find dataset folder data/calvin/packaged_debug/training/A+0
+Can't find dataset folder data/calvin/packaged_debug/training/B+0
+Can't find dataset folder data/calvin/packaged_debug/training/C+0
+Created dataset from data/calvin/packaged_debug/training with 9
+Can't find dataset folder data/calvin/packaged_debug/validation/A+0
+Can't find dataset folder data/calvin/packaged_debug/validation/B+0
+Can't find dataset folder data/calvin/packaged_debug/validation/C+0
+Created dataset from data/calvin/packaged_debug/validation with 8
+Model parameters: 9751498
+  0%|          | 0/40 [00:00<?, ?it/s]  2%|▎         | 1/40 [00:11<07:36, 11.70s/it]  5%|▌         | 2/40 [00:18<05:33,  8.78s/it]  8%|▊         | 3/40 [00:26<05:06,  8.29s/it] 10%|█         | 4/40 [00:29<03:48,  6.34s/it] 12%|█▎        | 5/40 [00:31<02:43,  4.67s/it] 15%|█▌        | 6/40 [00:33<02:07,  3.74s/it] 18%|█▊        | 7/40 [00:37<02:11,  3.98s/it] 20%|██        | 8/40 [00:39<01:44,  3.25s/it] 22%|██▎       | 9/40 [00:41<01:28,  2.84s/it] 25%|██▌       | 10/40 [00:45<01:34,  3.15s/it] 28%|██▊       | 11/40 [00:46<01:18,  2.71s/it] 30%|███       | 12/40 [00:48<01:09,  2.47s/it] 32%|███▎      | 13/40 [00:52<01:16,  2.82s/it] 35%|███▌      | 14/40 [00:54<01:04,  2.48s/it] 38%|███▊      | 15/40 [00:55<00:57,  2.32s/it] 40%|████      | 16/40 [00:59<01:04,  2.67s/it] 42%|████▎     | 17/40 [01:01<00:54,  2.38s/it] 45%|████▌     | 18/40 [01:03<00:49,  2.25s/it] 48%|████▊     | 19/40 [01:06<00:55,  2.64s/it]Train evaluation.......
+Step 19:
+train-losses/mean/traj_action_mse: 0.249
+train-losses/mean/traj_pos_l2: 0.316
+train-losses/mean/traj_pos_acc_001: 0.000
+train-losses/mean/traj_rot_l1: 1.777
+train-losses/mean/traj_rot_acc_0025: 0.000
+train-losses/mean/traj_gripper: 0.567
+train-losses/mean/pos_l2_final: 0.295
+train-losses/mean/pos_l2_final<0.01: 0.000
+train-losses/mean/rot_l1: 1.742
+train-losses/mean/rot_l1<0025: 0.000
+train-loss/D/traj_pos_l2: 0.316
+train-loss/D/traj_pos_acc_001: 0.000
+train-loss/D/traj_rot_l1: 1.777
+train-loss/D/traj_rot_acc_0025: 0.000
+train-loss/D/pos_l2_final: 0.295
+train-loss/D/pos_l2_final<0.01: 0.000
+train-loss/D/rot_l1: 1.742
+train-loss/D/rot_l1<0.025: 0.000
+Test evaluation.......
+Step 19:
+val-losses/mean/traj_action_mse: 0.245
+val-losses/mean/traj_pos_l2: 0.318
+val-losses/mean/traj_pos_acc_001: 0.000
+val-losses/mean/traj_rot_l1: 1.753
+val-losses/mean/traj_rot_acc_0025: 0.000
+val-losses/mean/traj_gripper: 0.628
+val-losses/mean/pos_l2_final: 0.341
+val-losses/mean/pos_l2_final<0.01: 0.000
+val-losses/mean/rot_l1: 1.805
+val-losses/mean/rot_l1<0025: 0.000
+val-loss/D/traj_pos_l2: 0.318
+val-loss/D/traj_pos_acc_001: 0.000
+val-loss/D/traj_rot_l1: 1.753
+val-loss/D/traj_rot_acc_0025: 0.000
+val-loss/D/pos_l2_final: 0.341
+val-loss/D/pos_l2_final<0.01: 0.000
+val-loss/D/rot_l1: 1.805
+val-loss/D/rot_l1<0.025: 0.000
+ 50%|█████     | 20/40 [01:31<03:04,  9.25s/it] 52%|█████▎    | 21/40 [01:33<02:14,  7.06s/it] 55%|█████▌    | 22/40 [01:36<01:47,  5.98s/it] 57%|█████▊    | 23/40 [01:38<01:19,  4.70s/it] 60%|██████    | 24/40 [01:40<01:02,  3.88s/it] 62%|██████▎   | 25/40 [01:43<00:56,  3.75s/it] 65%|██████▌   | 26/40 [01:45<00:43,  3.14s/it] 68%|██████▊   | 27/40 [01:47<00:36,  2.78s/it] 70%|███████   | 28/40 [01:51<00:36,  3.02s/it] 72%|███████▎  | 29/40 [01:52<00:28,  2.63s/it] 75%|███████▌  | 30/40 [01:54<00:24,  2.42s/it] 78%|███████▊  | 31/40 [01:58<00:25,  2.78s/it] 80%|████████  | 32/40 [02:00<00:19,  2.46s/it] 82%|████████▎ | 33/40 [02:02<00:16,  2.31s/it] 85%|████████▌ | 34/40 [02:05<00:15,  2.65s/it] 88%|████████▊ | 35/40 [02:07<00:11,  2.37s/it] 90%|█████████ | 36/40 [02:09<00:08,  2.24s/it] 92%|█████████▎| 37/40 [02:12<00:07,  2.65s/it] 95%|█████████▌| 38/40 [02:14<00:04,  2.37s/it] 98%|█████████▊| 39/40 [02:16<00:02,  2.24s/it]Train evaluation.......
+Step 39:
+train-losses/mean/traj_action_mse: 0.106
+train-losses/mean/traj_pos_l2: 0.199
+train-losses/mean/traj_pos_acc_001: 0.001
+train-losses/mean/traj_rot_l1: 0.955
+train-losses/mean/traj_rot_acc_0025: 0.001
+train-losses/mean/traj_gripper: 0.542
+train-losses/mean/pos_l2_final: 0.199
+train-losses/mean/pos_l2_final<0.01: 0.005
+train-losses/mean/rot_l1: 0.921
+train-losses/mean/rot_l1<0025: 0.000
+train-loss/D/traj_pos_l2: 0.199
+train-loss/D/traj_pos_acc_001: 0.001
+train-loss/D/traj_rot_l1: 0.955
+train-loss/D/traj_rot_acc_0025: 0.001
+train-loss/D/pos_l2_final: 0.199
+train-loss/D/pos_l2_final<0.01: 0.005
+train-loss/D/rot_l1: 0.921
+train-loss/D/rot_l1<0.025: 0.000
+Test evaluation.......
+Step 39:
+val-losses/mean/traj_action_mse: 0.101
+val-losses/mean/traj_pos_l2: 0.200
+val-losses/mean/traj_pos_acc_001: 0.001
+val-losses/mean/traj_rot_l1: 0.942
+val-losses/mean/traj_rot_acc_0025: 0.000
+val-losses/mean/traj_gripper: 0.577
+val-losses/mean/pos_l2_final: 0.219
+val-losses/mean/pos_l2_final<0.01: 0.000
+val-losses/mean/rot_l1: 1.112
+val-losses/mean/rot_l1<0025: 0.000
+val-loss/D/traj_pos_l2: 0.200
+val-loss/D/traj_pos_acc_001: 0.001
+val-loss/D/traj_rot_l1: 0.942
+val-loss/D/traj_rot_acc_0025: 0.000
+val-loss/D/pos_l2_final: 0.219
+val-loss/D/pos_l2_final<0.01: 0.000
+val-loss/D/rot_l1: 1.112
+val-loss/D/rot_l1<0.025: 0.000
+100%|██████████| 40/40 [02:41<00:00,  9.14s/it]100%|██████████| 40/40 [02:41<00:00,  4.04s/it]

@@ -1,0 +1,119 @@
+pybullet build time: Jan 29 2025 23:19:57
+Arguments:
+{'accumulate_grad_batches': 1,
+ 'backbone': 'clip',
+ 'base_log_dir': PosixPath('/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/train_logs'),
+ 'batch_size': 30,
+ 'batch_size_val': 3,
+ 'cache_size': 0,
+ 'cache_size_val': 0,
+ 'cameras': ('front', 'wrist'),
+ 'checkpoint': None,
+ 'dataset': PosixPath('data/calvin/packaged_debug/training'),
+ 'dense_interpolation': 1,
+ 'diffusion_timesteps': 25,
+ 'embedding_dim': 192,
+ 'eval_only': 0,
+ 'exp_log_dir': 'probe',
+ 'fps_subsampling_factor': 3,
+ 'gripper_loc_bounds': 'tasks/calvin_rel_traj_location_bounds_task_ABC_D.json',
+ 'gripper_loc_bounds_buffer': 0.01,
+ 'image_rescale': '0.75,1.25',
+ 'image_size': '256,256',
+ 'instructions': PosixPath('instructions/calvin_debug'),
+ 'interpolation_length': 20,
+ 'keypose_only': 0,
+ 'lang_enhanced': 1,
+ 'lr': 0.0003,
+ 'max_episode_length': 30,
+ 'max_episodes_per_task': -1,
+ 'num_history': 3,
+ 'num_vis_ins_attn_layers': 2,
+ 'num_workers': 3,
+ 'quaternion_format': 'wxyz',
+ 'relative_action': 1,
+ 'rotation_parametrization': '6D',
+ 'run_log_dir': 'probe_b30',
+ 'seed': 0,
+ 'tasks': ('A', 'B', 'C', 'D'),
+ 'train_iters': 40,
+ 'use_instruction': 1,
+ 'val_freq': 20,
+ 'val_iters': 2,
+ 'valset': PosixPath('data/calvin/packaged_debug/validation'),
+ 'variations': (0,),
+ 'wd': 0.005}
+----------------------------------------------------------------------------------------------------
+Gripper workspace size: [0.66333743 0.59459641 0.39931523]
+Logging: /home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/train_logs/probe/probe_b30
+Available devices (CUDA_VISIBLE_DEVICES): None
+Device count 1
+Can't find dataset folder data/calvin/packaged_debug/training/A+0
+Can't find dataset folder data/calvin/packaged_debug/training/B+0
+Can't find dataset folder data/calvin/packaged_debug/training/C+0
+Created dataset from data/calvin/packaged_debug/training with 9
+Can't find dataset folder data/calvin/packaged_debug/validation/A+0
+Can't find dataset folder data/calvin/packaged_debug/validation/B+0
+Can't find dataset folder data/calvin/packaged_debug/validation/C+0
+Created dataset from data/calvin/packaged_debug/validation with 8
+  0%|                                               | 0.00/244M [00:00<?, ?iB/s]  1%|▎                                     | 1.73M/244M [00:00<00:13, 18.2MiB/s]  7%|██▊                                    | 17.7M/244M [00:00<00:02, 106MiB/s] 12%|████▊                                  | 30.5M/244M [00:00<00:02, 112MiB/s] 18%|███████                                | 44.3M/244M [00:00<00:01, 124MiB/s] 23%|████████▊                             | 56.2M/244M [00:00<00:02, 70.6MiB/s] 27%|██████████▏                           | 65.1M/244M [00:00<00:02, 70.4MiB/s] 32%|████████████                          | 77.7M/244M [00:00<00:02, 84.3MiB/s] 36%|█████████████▋                        | 88.0M/244M [00:01<00:02, 77.4MiB/s] 40%|███████████████                       | 96.5M/244M [00:01<00:02, 73.8MiB/s] 46%|█████████████████▉                     | 112M/244M [00:01<00:01, 93.9MiB/s] 52%|████████████████████▉                   | 127M/244M [00:01<00:01, 111MiB/s] 57%|██████████████████████▏                | 139M/244M [00:01<00:01, 97.6MiB/s] 63%|█████████████████████████               | 153M/244M [00:01<00:00, 108MiB/s] 69%|███████████████████████████▌            | 168M/244M [00:01<00:00, 123MiB/s] 74%|████████████████████████████▉          | 181M/244M [00:02<00:00, 81.5MiB/s] 79%|██████████████████████████████▉        | 194M/244M [00:02<00:00, 91.8MiB/s] 85%|█████████████████████████████████▊      | 207M/244M [00:02<00:00, 102MiB/s] 90%|████████████████████████████████████    | 220M/244M [00:02<00:00, 111MiB/s] 95%|██████████████████████████████████████  | 232M/244M [00:02<00:00, 116MiB/s]100%|███████████████████████████████████████| 244M/244M [00:02<00:00, 97.9MiB/s]
+Model parameters: 9751498
+  0%|          | 0/40 [00:00<?, ?it/s]  0%|          | 0/40 [00:16<?, ?it/s]
+Traceback (most recent call last):
+  File "main_trajectory_calvin.py", line 205, in <module>
+    train_tester.main(collate_fn=traj_collate_fn)
+  File "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/engine.py", line 155, in main
+    self.train_one_step(model, criterion, optimizer, step_id, sample)
+  File "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/main_trajectory.py", line 185, in train_one_step
+    out = model(
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1040, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/nn/parallel/distributed.py", line 1000, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/diffuser_actor/trajectory_optimization/diffuser_actor.py", line 354, in forward
+    fixed_inputs = self.encode_inputs(
+  File "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/diffuser_actor/trajectory_optimization/diffuser_actor.py", line 80, in encode_inputs
+    rgb_feats_pyramid, pcd_pyramid = self.encoder.encode_images(
+  File "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/diffuser_actor/utils/encoder.py", line 183, in encode_images
+    rgb_features = self.feature_pyramid(rgb_features)
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torchvision/ops/feature_pyramid_network.py", line 194, in forward
+    inner_top_down = F.interpolate(last_inner, size=feat_shape, mode="nearest")
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/nn/functional.py", line 3922, in interpolate
+    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.40 GiB (GPU 0; 14.56 GiB total capacity; 7.72 GiB already allocated; 1.55 GiB free; 11.97 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF
+ERROR:torch.distributed.elastic.multiprocessing.api:failed (exitcode: 1) local_rank: 0 (pid: 6880) of binary: /home/ubuntu/miniconda3/envs/3d_diffuser_actor/bin/python
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==1.13.1', 'console_scripts', 'torchrun')())
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/distributed/run.py", line 762, in main
+    run(args)
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/distributed/run.py", line 753, in run
+    elastic_launch(
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 132, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/torch/distributed/launcher/api.py", line 246, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_trajectory_calvin.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-11-03_18:59:57
+  host      : ip-172-31-46-30.us-east-2.compute.internal
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 6880)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

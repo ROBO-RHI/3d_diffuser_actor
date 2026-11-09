@@ -1,0 +1,10 @@
+--- a/pyhash-0.9.3/src/pybind11/include/pybind11/attr.h	2019-03-07 16:03:04.000000000 +0000
++++ b/pyhash-0.9.3/src/pybind11/include/pybind11/attr.h	2026-11-03 18:51:55.323040009 +0000
+@@ -9,6 +9,7 @@
+ */
+ 
+ #pragma once
++#include <cstdint>
+ 
+ #include "cast.h"
+ 

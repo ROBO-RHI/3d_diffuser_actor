@@ -1,0 +1,5 @@
+repo,url,commit,note
+3d_diffuser_actor,https://github.com/nickgkan/3d_diffuser_actor,4faf00bdf89a3b3d07e266a59a28f9fbd02c7844,upstream base commit
+calvin,https://github.com/mees/calvin,fa03f01f19c65920e18cf37398a9ce859274af76,cloned next to this repo (../calvin); install.sh modified (patches/calvin_install_sh.patch)
+calvin_env,https://github.com/mees/calvin_env,797142c588c21e76717268b7b430958dbd13bf48,submodule checked out to 'main' (not the commit pinned by calvin)
+CLIP,https://github.com/openai/CLIP,d05afc436d78f1c48dc0dbf8e5980a9d471f35f6,pip install from git

@@ -1,0 +1,11 @@
+Processing /home/ubuntu/ROBOT_LEARNING_PROJECT/setup_logs/pyhash_build/pyhash-0.9.3
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: pyhash
+  Building wheel for pyhash (setup.py): started
+  Building wheel for pyhash (setup.py): finished with status 'done'
+  Created wheel for pyhash: filename=pyhash-0.9.3-cp38-cp38-linux_x86_64.whl size=211731 sha256=c89cad99dfab239d72ca2b028e5eeeb91d8480480aba7b22922ac57be7cd2223
+  Stored in directory: /tmp/pip-ephem-wheel-cache-ksazm6ok/wheels/51/0f/9c/5e9242071d8d1f1bcef3b8068edebe41f7e3a27d15ae026597
+Successfully built pyhash
+Installing collected packages: pyhash
+Successfully installed pyhash-0.9.3

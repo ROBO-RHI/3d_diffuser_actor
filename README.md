@@ -2,6 +2,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/3d-diffuser-actor-policy-diffusion-with-3d/robot-manipulation-on-rlbench)](https://paperswithcode.com/sota/robot-manipulation-on-rlbench?p=3d-diffuser-actor-policy-diffusion-with-3d)
 
 
+> **About this fork (ROBO-RHI):** the upstream code is unchanged, apart from the added single-GPU training script [scripts/train_trajectory_calvin_1gpu.sh](scripts/train_trajectory_calvin_1gpu.sh). The full record of our CALVIN setup on 1× T4 (commands, fixes, exact versions, logs and results) is in [reproduction/calvin_debug_t4/](reproduction/calvin_debug_t4/README.md).
+
 # 3D Diffuser Actor: Policy Diffusion with 3D Scene Representations
 By [Tsung-Wei Ke*](https://twke18.github.io/), [Nikolaos Gkanatsios*](https://nickgkan.github.io/) and [Katerina Fragkiadaki](https://www.cs.cmu.edu/~katef/)
 

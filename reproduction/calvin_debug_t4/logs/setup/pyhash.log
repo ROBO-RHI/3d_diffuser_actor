@@ -1,0 +1,123 @@
+Collecting pyhash
+  Downloading pyhash-0.9.3.tar.gz (602 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 602.3/602.3 kB 39.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Building wheels for collected packages: pyhash
+  Building wheel for pyhash (setup.py): started
+  Building wheel for pyhash (setup.py): finished with status 'error'
+  error: subprocess-exited-with-error
+  
+  × python setup.py bdist_wheel did not run successfully.
+  │ exit code: 1
+  ╰─> [103 lines of output]
+      running bdist_wheel
+      running build
+      running build_py
+      creating build
+      creating build/lib.linux-x86_64-3.8
+      creating build/lib.linux-x86_64-3.8/pyhash
+      copying pyhash/__init__.py -> build/lib.linux-x86_64-3.8/pyhash
+      /home/ubuntu/miniconda3/envs/3d_diffuser_actor/lib/python3.8/site-packages/setuptools/lib2to3_ex.py:36: SetuptoolsDeprecationWarning: 2to3 support is deprecated. If the project still requires Python 2 support, please migrate to a single-codebase solution or employ an independent conversion process.
+        warnings.warn(
+      Fixing build/lib.linux-x86_64-3.8/pyhash/__init__.py
+      Skipping optional fixer: buffer
+      Skipping optional fixer: idioms
+      Skipping optional fixer: set_literal
+      Skipping optional fixer: ws_comma
+      Fixing build/lib.linux-x86_64-3.8/pyhash/__init__.py
+      Skipping optional fixer: buffer
+      Skipping optional fixer: idioms
+      Skipping optional fixer: set_literal
+      Skipping optional fixer: ws_comma
+      running build_clib
+      building 'fnv' library
+      creating build/temp.linux-x86_64-3.8
+      creating build/temp.linux-x86_64-3.8/src
+      creating build/temp.linux-x86_64-3.8/src/fnv
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/fnv/hash_32.c -o build/temp.linux-x86_64-3.8/src/fnv/hash_32.o
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/fnv/hash_32a.c -o build/temp.linux-x86_64-3.8/src/fnv/hash_32a.o
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/fnv/hash_64.c -o build/temp.linux-x86_64-3.8/src/fnv/hash_64.o
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/fnv/hash_64a.c -o build/temp.linux-x86_64-3.8/src/fnv/hash_64a.o
+      ar rcs build/temp.linux-x86_64-3.8/libfnv.a build/temp.linux-x86_64-3.8/src/fnv/hash_32.o build/temp.linux-x86_64-3.8/src/fnv/hash_32a.o build/temp.linux-x86_64-3.8/src/fnv/hash_64.o build/temp.linux-x86_64-3.8/src/fnv/hash_64a.o
+      building 'smhasher' library
+      creating build/temp.linux-x86_64-3.8/src/smhasher
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/MurmurHash1.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/MurmurHash1.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/MurmurHash2.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/MurmurHash2.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/MurmurHash3.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/MurmurHash3.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/City.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/City.o -msse4.2 -maes -mavx -mavx2
+      src/smhasher/City.cpp: In function ‘uint32 Hash32Len0to4(const char*, size_t, uint32)’:
+      src/smhasher/City.cpp:148:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+        148 |   for (int i = 0; i < len; i++) {
+            |                   ~~^~~~~
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/Spooky.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/Spooky.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/metrohash64.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/metrohash64.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/metrohash64crc.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/metrohash64crc.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/metrohash128.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/metrohash128.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/metrohash128crc.cpp -o build/temp.linux-x86_64-3.8/src/smhasher/metrohash128crc.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/xxhash.c -o build/temp.linux-x86_64-3.8/src/smhasher/xxhash.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/smhasher/farmhash-c.c -o build/temp.linux-x86_64-3.8/src/smhasher/farmhash-c.o -msse4.2 -maes -mavx -mavx2
+      ar rcs build/temp.linux-x86_64-3.8/libsmhasher.a build/temp.linux-x86_64-3.8/src/smhasher/MurmurHash1.o build/temp.linux-x86_64-3.8/src/smhasher/MurmurHash2.o build/temp.linux-x86_64-3.8/src/smhasher/MurmurHash3.o build/temp.linux-x86_64-3.8/src/smhasher/City.o build/temp.linux-x86_64-3.8/src/smhasher/Spooky.o build/temp.linux-x86_64-3.8/src/smhasher/metrohash64.o build/temp.linux-x86_64-3.8/src/smhasher/metrohash64crc.o build/temp.linux-x86_64-3.8/src/smhasher/metrohash128.o build/temp.linux-x86_64-3.8/src/smhasher/metrohash128crc.o build/temp.linux-x86_64-3.8/src/smhasher/xxhash.o build/temp.linux-x86_64-3.8/src/smhasher/farmhash-c.o
+      building 't1ha' library
+      creating build/temp.linux-x86_64-3.8/src/t1ha
+      creating build/temp.linux-x86_64-3.8/src/t1ha/src
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DT1HA0_AESNI_AVAILABLE=1 -DT1HA0_RUNTIME_SELECT=1 -c src/t1ha/src/t1ha0.c -o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DT1HA0_AESNI_AVAILABLE=1 -DT1HA0_RUNTIME_SELECT=1 -c src/t1ha/src/t1ha0_ia32aes_avx.c -o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0_ia32aes_avx.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DT1HA0_AESNI_AVAILABLE=1 -DT1HA0_RUNTIME_SELECT=1 -c src/t1ha/src/t1ha0_ia32aes_avx2.c -o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0_ia32aes_avx2.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DT1HA0_AESNI_AVAILABLE=1 -DT1HA0_RUNTIME_SELECT=1 -c src/t1ha/src/t1ha0_ia32aes_noavx.c -o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0_ia32aes_noavx.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DT1HA0_AESNI_AVAILABLE=1 -DT1HA0_RUNTIME_SELECT=1 -c src/t1ha/src/t1ha1.c -o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha1.o -msse4.2 -maes -mavx -mavx2
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DT1HA0_AESNI_AVAILABLE=1 -DT1HA0_RUNTIME_SELECT=1 -c src/t1ha/src/t1ha2.c -o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha2.o -msse4.2 -maes -mavx -mavx2
+      ar rcs build/temp.linux-x86_64-3.8/libt1ha.a build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0.o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0_ia32aes_avx.o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0_ia32aes_avx2.o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha0_ia32aes_noavx.o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha1.o build/temp.linux-x86_64-3.8/src/t1ha/src/t1ha2.o
+      building 'lookup3' library
+      creating build/temp.linux-x86_64-3.8/src/lookup3
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/lookup3/lookup3.c -o build/temp.linux-x86_64-3.8/src/lookup3/lookup3.o
+      ar rcs build/temp.linux-x86_64-3.8/liblookup3.a build/temp.linux-x86_64-3.8/src/lookup3/lookup3.o
+      building 'SuperFastHash' library
+      creating build/temp.linux-x86_64-3.8/src/SuperFastHash
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -c src/SuperFastHash/SuperFastHash.c -o build/temp.linux-x86_64-3.8/src/SuperFastHash/SuperFastHash.o
+      ar rcs build/temp.linux-x86_64-3.8/libSuperFastHash.a build/temp.linux-x86_64-3.8/src/SuperFastHash/SuperFastHash.o
+      running build_ext
+      building '_pyhash' extension
+      gcc -pthread -B /home/ubuntu/miniconda3/envs/3d_diffuser_actor/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -fPIC -O2 -isystem /home/ubuntu/miniconda3/envs/3d_diffuser_actor/include -include stdint.h -fPIC -DSUPPORT_INT128=1 -Isrc/pybind11/include -I/home/ubuntu/miniconda3/envs/3d_diffuser_actor/include/python3.8 -c src/Hash.cpp -o build/temp.linux-x86_64-3.8/src/Hash.o -msse4.2 -maes -mavx -mavx2 -std=c++11
+      In file included from src/pybind11/include/pybind11/pybind11.h:44,
+                       from src/Hash.h:6,
+                       from src/Hash.cpp:1:
+      src/pybind11/include/pybind11/attr.h:185:10: error: ‘uint16_t’ in namespace ‘std’ does not name a type; did you mean ‘wint_t’?
+        185 |     std::uint16_t nargs;
+            |          ^~~~~~~~
+            |          wint_t
+      src/pybind11/include/pybind11/attr.h: In constructor ‘pybind11::detail::function_call::function_call(const pybind11::detail::function_record&, pybind11::handle)’:
+      src/pybind11/include/pybind11/attr.h:286:20: error: ‘const struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+        286 |     args.reserve(f.nargs);
+            |                    ^~~~~
+            |                    args
+      src/pybind11/include/pybind11/attr.h:287:28: error: ‘const struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+        287 |     args_convert.reserve(f.nargs);
+            |                            ^~~~~
+            |                            args
+      src/pybind11/include/pybind11/pybind11.h: In member function ‘void pybind11::cpp_function::initialize_generic(pybind11::detail::function_record*, const char*, const std::type_info* const*, pybind11::size_t)’:
+      src/pybind11/include/pybind11/pybind11.h:284:14: error: ‘struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+        284 |         rec->nargs = (std::uint16_t) args;
+            |              ^~~~~
+            |              args
+      src/pybind11/include/pybind11/pybind11.h:284:28: error: ‘uint16_t’ is not a member of ‘std’; did you mean ‘wint_t’?
+        284 |         rec->nargs = (std::uint16_t) args;
+            |                            ^~~~~~~~
+            |                            wint_t
+      src/pybind11/include/pybind11/pybind11.h: In static member function ‘static PyObject* pybind11::cpp_function::dispatcher(PyObject*, PyObject*, PyObject*)’:
+      src/pybind11/include/pybind11/pybind11.h:482:40: error: ‘const struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+        482 |                 size_t pos_args = func.nargs;    // Number of positional arguments that we need
+            |                                        ^~~~~
+            |                                        args
+      src/pybind11/include/pybind11/pybind11.h:613:53: error: ‘const struct pybind11::detail::function_record’ has no member named ‘nargs’; did you mean ‘args’?
+        613 |                     second_pass_convert.resize(func.nargs, false);
+            |                                                     ^~~~~
+            |                                                     args
+      error: command 'gcc' failed with exit status 1
+      [end of output]
+  
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pyhash
+  Running setup.py clean for pyhash
+Failed to build pyhash
+ERROR: ERROR: Failed to build installable wheels for some pyproject.toml based projects (pyhash)

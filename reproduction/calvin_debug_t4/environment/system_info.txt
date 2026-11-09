@@ -1,0 +1,11 @@
+# captured 2026-11-09T21:20:05Z
+Linux ip-172-31-46-30 7.0.0-1014-aws #14~24.04.1-Ubuntu SMP PREEMPT Fri Sep 18 21:24:59 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+Ubuntu 24.04.5 LTS
+gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
+Tesla T4, 595.99.02, 15360 MiB
+Build cuda_11.6.r11.6/compiler.31057947_0
+4
+Mem:              15           1          11           0           2          13
+Python 3.8.20
+conda 26.9.4
+torch 1.13.1 cuda 11.6 cudnn 8302

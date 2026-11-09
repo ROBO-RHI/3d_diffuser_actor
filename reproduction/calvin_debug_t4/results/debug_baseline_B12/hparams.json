@@ -1,0 +1,97 @@
+{
+    "accumulate_grad_batches": 1,
+    "backbone": "clip",
+    "base_log_dir": {
+        "_string": "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/train_logs",
+        "_type": "python_object (type = PosixPath)",
+        "_value": "gASVbAAAAAAAAACMB3BhdGhsaWKUjAlQb3NpeFBhdGiUk5QojAEvlIwEaG9tZZSMBnVidW50dZSMFlJPQk9UX0xFQVJOSU5HX1BST0pFQ1SUjBEzZF9kaWZmdXNlcl9hY3RvcpSMCnRyYWluX2xvZ3OUdJRSlC4="
+    },
+    "batch_size": 12,
+    "batch_size_val": 3,
+    "cache_size": 0,
+    "cache_size_val": 0,
+    "cameras": {
+        "_type": "tuple",
+        "_value": [
+            "front",
+            "wrist"
+        ]
+    },
+    "checkpoint": null,
+    "dataset": {
+        "_string": "data/calvin/packaged_debug/training",
+        "_type": "python_object (type = PosixPath)",
+        "_value": "gASVSgAAAAAAAACMB3BhdGhsaWKUjAlQb3NpeFBhdGiUk5QojARkYXRhlIwGY2FsdmlulIwOcGFja2FnZWRfZGVidWeUjAh0cmFpbmluZ5R0lFKULg=="
+    },
+    "dense_interpolation": 1,
+    "diffusion_timesteps": 25,
+    "embedding_dim": 192,
+    "eval_only": 0,
+    "exp_log_dir": "Planner_Calvin",
+    "fps_subsampling_factor": 3,
+    "gripper_loc_bounds": {
+        "_string": "[[-0.30205889 -0.25688798 -0.21557967]\n [ 0.36127854  0.33770842  0.18373556]]",
+        "_type": "python_object (type = ndarray)",
+        "_value": "gASVugAAAAAAAACMFW51bXB5LmNvcmUubXVsdGlhcnJheZSMDF9yZWNvbnN0cnVjdJSTlIwFbnVtcHmUjAduZGFycmF5lJOUSwCFlEMBYpSHlFKUKEsBSwJLA4aUaAOMBWR0eXBllJOUjAJmOJSJiIeUUpQoSwOMATyUTk5OSv////9K/////0sAdJRiiUMwpHA9yu5U07+kcD1K2nDQv0jhelQdmMu/pHA9CjAf1z+kcD3KA53VP0jhepSlhMc/lHSUYi4="
+    },
+    "gripper_loc_bounds_buffer": 0.01,
+    "image_rescale": "0.75,1.25",
+    "image_size": "256,256",
+    "instructions": {
+        "_string": "instructions/calvin_debug",
+        "_type": "python_object (type = PosixPath)",
+        "_value": "gASVOwAAAAAAAACMB3BhdGhsaWKUjAlQb3NpeFBhdGiUk5SMDGluc3RydWN0aW9uc5SMDGNhbHZpbl9kZWJ1Z5SGlFKULg=="
+    },
+    "interpolation_length": 20,
+    "keypose_only": 0,
+    "lang_enhanced": 1,
+    "local_rank": 0,
+    "log_dir": {
+        "_string": "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor/train_logs/Planner_Calvin/debug_baseline_B12",
+        "_type": "python_object (type = PosixPath)",
+        "_value": "gASVkgAAAAAAAACMB3BhdGhsaWKUjAlQb3NpeFBhdGiUk5QojAEvlIwEaG9tZZSMBnVidW50dZSMFlJPQk9UX0xFQVJOSU5HX1BST0pFQ1SUjBEzZF9kaWZmdXNlcl9hY3RvcpSMCnRyYWluX2xvZ3OUjA5QbGFubmVyX0NhbHZpbpSMEmRlYnVnX2Jhc2VsaW5lX0IxMpR0lFKULg=="
+    },
+    "lr": 0.0003,
+    "max_episode_length": 30,
+    "max_episodes_per_task": -1,
+    "num_history": 3,
+    "num_vis_ins_attn_layers": 2,
+    "num_workers": 3,
+    "quaternion_format": "wxyz",
+    "relative_action": 1,
+    "reproducibility": {
+        "command_line": "python main_trajectory_calvin.py --tasks A B C D --backbone clip --dataset ./data/calvin/packaged_debug/training --valset ./data/calvin/packaged_debug/validation --instructions instructions/calvin_debug/ --gripper_loc_bounds tasks/calvin_rel_traj_location_bounds_task_ABC_D.json --gripper_loc_bounds_buffer 0.01 --image_size 256,256 --num_workers 3 --max_episode_length 30 --train_iters 20000 --embedding_dim 192 --use_instruction 1 --rotation_parametrization 6D --diffusion_timesteps 25 --val_freq 2000 --val_iters 2 --dense_interpolation 1 --interpolation_length 20 --exp_log_dir Planner_Calvin --batch_size 12 --accumulate_grad_batches 1 --batch_size_val 3 --cache_size 0 --cache_size_val 0 --keypose_only 0 --variations 0 --lr 3e-4 --wd 5e-3 --num_history 3 --cameras front wrist --max_episodes_per_task -1 --relative_action 1 --fps_subsampling_factor 3 --lang_enhanced 1 --quaternion_format wxyz --run_log_dir debug_baseline_B12",
+        "git_has_uncommitted_changes": true,
+        "git_root": "/home/ubuntu/ROBOT_LEARNING_PROJECT/3d_diffuser_actor",
+        "git_url": "https://github.com/nickgkan/3d_diffuser_actor/tree/4faf00bdf89a3b3d07e266a59a28f9fbd02c7844",
+        "time": "Tue Nov  3 19:03:21 2026"
+    },
+    "rotation_parametrization": "6D",
+    "run_log_dir": "debug_baseline_B12",
+    "seed": 0,
+    "tasks": {
+        "_type": "tuple",
+        "_value": [
+            "A",
+            "B",
+            "C",
+            "D"
+        ]
+    },
+    "train_iters": 20000,
+    "use_instruction": 1,
+    "val_freq": 2000,
+    "val_iters": 2,
+    "valset": {
+        "_string": "data/calvin/packaged_debug/validation",
+        "_type": "python_object (type = PosixPath)",
+        "_value": "gASVTAAAAAAAAACMB3BhdGhsaWKUjAlQb3NpeFBhdGiUk5QojARkYXRhlIwGY2FsdmlulIwOcGFja2FnZWRfZGVidWeUjAp2YWxpZGF0aW9ulHSUUpQu"
+    },
+    "variations": {
+        "_type": "tuple",
+        "_value": [
+            0
+        ]
+    },
+    "wd": 0.005
+}
