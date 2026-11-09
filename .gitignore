@@ -28,3 +28,6 @@ calvin/
 
 # data directory
 data/
+
+# symlink to ../calvin created by reproduction/calvin_debug_t4/setup/06_*.sh
+/calvin
